@@ -48,7 +48,8 @@ public class MainController {
 
         student.setName(studentDetails.getName());
         student.setAge(studentDetails.getAge());
-
+        student.setRno(studentDetails.getRno());
+        studentRepo.deleteById(id);
         return studentRepo.save(student);
     }
 
